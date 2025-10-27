@@ -1,0 +1,138 @@
+@import url(fontawesome-all.min.css);
+/* Crimson Text Font Declarations */
+@font-face {
+  font-family: 'Lato';
+  src: url("../pagefonts/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Lato';
+  src: url("../pagefonts/Lato-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap; }
+@font-face {
+  font-family: 'Lato';
+  src: url("../pagefonts/Lato-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Lato';
+  src: url("../pagefonts/Lato-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap; }
+@font-face {
+  font-family: 'Lato';
+  src: url("../pagefonts/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Lato';
+  src: url("../pagefonts/Lato-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap; }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f9f5e4;
+    color: #495b4c;
+    a {
+        text-decoration: none;
+        color: #495b4c;
+        font-weight: bold;
+        border-bottom: dotted 1px;
+        transition: color .2s 
+        ease, border-bottom-color .2s 
+        ease;
+    }
+    a:hover {
+        font-weight: normal;
+        border-bottom: none;
+    }
+    ul {
+        list-style-type: none;
+    }
+  }
+
+  /* Banner */
+#banner {
+    padding: 5em 0 3em 0 ; 
+    margin: 0 0 0 0;}
+    #banner .inner {
+      margin: 0 auto;
+      width: 55em;
+      text-align: center; }
+    #banner .logo {
+      -moz-transition: opacity 2s ease, -moz-transform 1s ease;
+      -webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
+      -ms-transition: opacity 2s ease, -ms-transform 1s ease;
+      transition: opacity 2s ease, transform 1s ease;
+      -moz-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;}
+      #banner .logo .icon {
+        display: inline-block;
+        font-size: 2em;
+        height: 7.25em;
+        line-height: 2.25em;
+        text-align: center;}
+    @media screen and (max-width: 1280px) {
+      #banner {
+        background-size: auto, cover;
+        background-position: center, center;
+        } }
+    @media screen and (max-width: 980px) {
+        #banner {
+            padding: 2em 0 1.5em 0 ; 
+        }
+        #banner .inner {
+          width: 100%; }
+          #banner .logo .icon {
+            font-size: 1.5em; } 
+    }
+    @media screen and (max-width: 736px) {
+        #banner {
+            padding: 2em 0 1.5em 0 ; 
+        }
+        #banner .logo .icon {
+        font-size: 1em; } 
+    }
+    body.is-preload #banner .logo {
+      -moz-transform: translateY(0.5em);
+      -webkit-transform: translateY(0.5em);
+      -ms-transform: translateY(0.5em);
+      transform: translateY(0.5em);
+      opacity: 0; }
+
+  #wrapper {
+    padding: 1.5em 3em 3em 3em;
+    ul {
+        list-style-type: none;
+        margin: 1.5em 0 0 0;
+        padding: 0;
+    }
+
+    font-size: 1.2em;
+    .large {
+        font-size: 1.5em;
+    }
+    @media screen and (max-width: 736px) {
+        font-size: 1em;
+        .large {
+            font-size: 1.3em;
+        }
+    }
+
+    p {
+        margin-block-start: .6em;
+        margin-block-end: .6em;
+    }
+
+  }

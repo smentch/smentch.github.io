@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>{{ page.title | default: site.title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" />
+		<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+		<noscript><link rel="stylesheet" href="{{ '/assets/css/noscript.css' | relative_url }}" /></noscript>
+		<meta property="og:locale" content="en_US">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="{{ page.title | default: site.title }}">
+		<meta property="og:description" content="Stephanie Mentch, PT, DPT, based in Hood River, Oregon. Learn more about how Stephanie can help you.">
+		<meta property="og:url" content="{{ site.url }}">
+		<meta property="og:site_name" content="{{ page.title | default: site.title }}">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:description" content="Stephanie Mentch, PT, DPT, based in Hood River, Oregon. Learn more about how Stephanie can help you.">
+		<meta name="twitter:title" content="{{ page.title | default: site.title }}">
+		<meta name="twitter:image" content="{{ '/assets/images/rooted_logo.png'  | relative_url }}">
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Main Content -->
+				{{ content }}
+
+				<!-- Footer -->
+					<section id="footer">
+							<ul class="copyright">
+								<li>&copy; <script>document.write(new Date().getFullYear());</script> Rooted Pelvic Health & Recovery. All rights reserved.</li>
+								<li>Built with: <a href="https://jekyllrb.com/">Jekyll</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+            <!-- Scripts -->
+            <script src="{{ '/assets/js/browser.min.js' | relative_url }}"></script>
+			<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+	</body>
+</html>
