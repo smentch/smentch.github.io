@@ -123,9 +123,6 @@
     .large {
       font-weight: bold;
     }
-    @media screen and (max-width: 736px) {
-      font-size: 16pt;
-    }
     p {
         margin-block-start: .6em;
         margin-block-end: .6em;
