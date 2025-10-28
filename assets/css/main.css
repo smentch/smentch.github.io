@@ -119,17 +119,13 @@
         padding: 0;
     }
 
-    font-size: 1.2em;
+    font-size: 18pt;
     .large {
-        font-size: 1.5em;
+      font-weight: bold;
     }
     @media screen and (max-width: 736px) {
-        font-size: 1em;
-        .large {
-            font-size: 1.3em;
-        }
+      font-size: 16pt;
     }
-
     p {
         margin-block-start: .6em;
         margin-block-end: .6em;
